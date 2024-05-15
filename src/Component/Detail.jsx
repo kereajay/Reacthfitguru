@@ -14,24 +14,46 @@ const Details = () => {
 
     }, [])
 
+    // const url = `https://exercisedb.p.rapidapi.com/exercises/exercise/${id}`;
+    // const options = {
+    //     method: 'GET',
+    //     headers: {
+    //         'X-RapidAPI-Key': 'dc4936c9camsh24f00fe91f1db10p1981a1jsnc581cd0d2b8f',
+    //         'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
+    //     }
+    // };
+
+
+
+
+
+    // async function awaydiplay() {
+    //     try {
+    //         const response = await fetch(url, options);
+    //         const result = await response.json();
+    //         // console.log(result);
+    //         return result;
+    //     } catch (error) {
+    //         console.error(error);
+    //     }
+    // }
+
+
+
     const url = `https://exercisedb.p.rapidapi.com/exercises/exercise/${id}`;
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'dc4936c9camsh24f00fe91f1db10p1981a1jsnc581cd0d2b8f',
+            'X-RapidAPI-Key': '1ff40bb1a7msh82e5e45ae62e3cfp1b2312jsn8685afb25fa1',
             'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
         }
     };
-
-
-
-
-
     async function awaydiplay() {
+
         try {
             const response = await fetch(url, options);
             const result = await response.json();
-            // console.log(result);
+            console.log(result);
             return result;
         } catch (error) {
             console.error(error);

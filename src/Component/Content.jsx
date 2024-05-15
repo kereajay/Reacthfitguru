@@ -1,14 +1,41 @@
-import { useState ,useEffect } from "react";
+import { useState, useEffect } from "react";
 const useGymapi = () => {
     // const [data, setData] = useState([]);
     // useEffect(()=>{
     //    Fetachgymapi().then((results)=>{
     //     setData(results)
     //  })
-    
+
     // },[])
-    
+
     //  console.log(data);
+
+
+
+    // const url = 'https://exercisedb.p.rapidapi.com/exercises?limit=20';
+    // const options = {
+    //     method: 'GET',
+    //     headers: {
+    //         'X-RapidAPI-Key': 'dc4936c9camsh24f00fe91f1db10p1981a1jsnc581cd0d2b8f',
+    //         'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
+    //     }
+    // };
+
+
+
+
+
+    // async function Fetachgymapi() {
+    //     try {
+    //         const response = await fetch(url, options);
+    //         const result = await response.json();
+    //         // console.log(result);
+    //         return result;
+    //     } catch (error) {
+    //         console.error(error);
+    //     }
+    // }
+
 
 
 
@@ -16,20 +43,16 @@ const useGymapi = () => {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'dc4936c9camsh24f00fe91f1db10p1981a1jsnc581cd0d2b8f',
+            'X-RapidAPI-Key': '1ff40bb1a7msh82e5e45ae62e3cfp1b2312jsn8685afb25fa1',
             'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
         }
     };
-
-
-
-
-
     async function Fetachgymapi() {
+
         try {
             const response = await fetch(url, options);
             const result = await response.json();
-            // console.log(result);
+            console.log(result);
             return result;
         } catch (error) {
             console.error(error);
