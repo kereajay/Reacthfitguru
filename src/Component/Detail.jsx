@@ -47,11 +47,15 @@ const Details = () => {
                     <img src={diplaysingledata.gifUrl} alt="" />
 
                 </div>
+                {/* <hr /> */}
                 <div>
                     <h1 className='text-3xl font-bold'>{diplaysingledata.name}</h1>
                     <br />
                     <p className='text-xl'>{diplaysingledata.instructions}</p>
+                   
                     <br />
+
+                    <div className='hover:shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] p-5'>
                     <p className='text-lg font-bold '>Bodypart:- <span className='text-slate-500 text-sm'>{diplaysingledata.bodyPart}</span></p>
                     <br />
                     <p className='text-lg font-bold '>Equipment:- <span className='text-slate-500 text-sm'>{diplaysingledata.equipment}</span></p>
@@ -61,6 +65,7 @@ const Details = () => {
                     <p className='text-lg font-bold '>Secondary Muscle:- <span className='text-slate-500 text-sm'>{diplaysingledata.
                         secondaryMuscles
                     }</span></p>
+                    </div>
 
                 </div>
 
